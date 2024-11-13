@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-apokaliptyczne RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-container">
+    <h1>Witaj w Post-apokaliptycznym RPG</h1>
+    <p>Zaloguj się lub zarejestruj, aby rozpocząć przygodę.</p>
+
+    <!-- Przełączanie formularzy -->
+    <button id="login-btn">Zaloguj się</button>
+    <button id="register-btn">Zarejestruj się</button>
+
+    <!-- Formularz logowania -->
+    <div id="login-form" class="form-container">
+      <h2>Logowanie</h2>
+      <form id="login" action="login.php" method="POST">
+        <label for="login-username">Nazwa użytkownika:</label>
+        <input type="text" id="login-username" name="username" required>
+        <label for="login-password">Hasło:</label>
+        <input type="password" id="login-password" name="password" required>
+        <button type="submit">Zaloguj się</button>
+      </form>
+    </div>
+
+    <!-- Formularz rejestracji -->
+    <div id="register-form" class="form-container" style="display: none;">
+      <h2>Rejestracja</h2>
+      <form id="register" action="register.php" method="POST">
+        <label for="register-username">Nazwa użytkownika:</label>
+        <input type="text" id="register-username" name="username" required>
+        <label for="register-password">Hasło:</label>
+        <input type="password" id="register-password" name="password" required>
+        <button type="submit">Zarejestruj się</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Post-apokaliptyczne RPG</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
